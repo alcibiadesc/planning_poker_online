@@ -1,0 +1,28 @@
+#cardRender{
+background: linear-gradient(270deg, #4158d0, #cc5529);
+background-size: 400% 400%;
+color: white;
+border-radius: 5%;
+height: 4em;
+
+
+-webkit-animation: AnimationName 12s ease infinite;
+-moz-animation: AnimationName 12s ease infinite;
+animation: AnimationName 12s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}}
+
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
