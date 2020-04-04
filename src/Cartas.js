@@ -3,13 +3,17 @@ import "./Cartas.css";
 
 
 
-function Cartas(props) {
+function Cartas({value}) {
   return (
-    <div className="grow center ma1">
-        <p id="cardRender" className="avenir dtc v-mid  tc w4 f1">{props.value}</p>
-    </div>
+  
+    <main  className="carta grow center ma1">
+        <p id="cardRender" className="noselect avenir dtc v-mid  tc w4 f1">{value}</p>
+    </main>
 
   );
 }
+
+
+
 
 export default Cartas;
