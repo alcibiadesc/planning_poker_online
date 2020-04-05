@@ -1,28 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import * as serviceWorker from "./serviceWorker";
 import "tachyons";
-import TitleBar from "./TitleBar"
-import Footer from "./Footer"
-import Attribution from "./Attribution"
-import CardList from "./CardList"
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-
-  <TitleBar />
-  <div className="flex flex-wrap">
-    <CardList/>
-  </div>
-  <div className="mb4 tc">
-  <Attribution />
-  </div>
-
-  <Footer />
-
+    <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

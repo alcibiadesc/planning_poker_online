@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css"
 
 
-export let deckInfo = "storyPoints";
+
 
 function BottomBar() {
   return (
