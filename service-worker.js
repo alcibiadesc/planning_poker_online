@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/planning_poker_online/precache-manifest.7bb4879cad0ca077d1eda8f9f97953a7.js"
+  "/planning_poker_online/precache-manifest.92585e1b27150099fbc88524530966a2.js"
 );
 
 self.addEventListener('message', (event) => {
