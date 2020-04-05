@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css"
 
 
-
+export let deckInfo = "storyPoints";
 
 function BottomBar() {
   return (
@@ -14,10 +14,8 @@ function BottomBar() {
         <a className="f5 f5-l link bg-animate black-80 hover-light-purple dib pa3 ph4-l linkBtm" href="/shop">Fibonacci</a>
       </nav>
     </footer>
-
-
-
   );
+
 }
 
 export default BottomBar;
