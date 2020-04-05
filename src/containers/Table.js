@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Table.css";
-import CardList from "./CardList";
+import CardList from "../components/CardList";
 
 function Table() {
   let [deck, setDeck] = useState("fibonacci");

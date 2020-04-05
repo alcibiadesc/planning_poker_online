@@ -12,7 +12,7 @@ const CardList = ({deckSelected}) => {
 
     item => item.deck === deckSelected || item.deck === "common"
   );
-  
+
   // render the cardValue filtered with map and inser a Key = card value.
   const cardValue = cardFiltered.map((item, index) => {
     return (
