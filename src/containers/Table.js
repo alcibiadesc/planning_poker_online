@@ -37,6 +37,15 @@ function Table() {
           >
             Fibonacci
           </p>
+          <p
+            onClick={() => {
+              setDeck((deck = "custom"));
+              console.log(`you changed the deck to: ${deck}`);
+            }}
+            className="noselect f5 f5-l link bg-animate black-80 hover-light-purple dib ph4 linkBtm"
+          >
+            Custom
+          </p>
         </nav>
       </footer>
     </>
