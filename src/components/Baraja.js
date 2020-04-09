@@ -58,7 +58,7 @@ export const baraja = [
     deck: "storyPoints"
   },
   {
-    value: "21",
+    value: "20",
     deck: "storyPoints"
   },
   {
