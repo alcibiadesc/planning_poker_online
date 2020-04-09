@@ -123,10 +123,7 @@ export const baraja = [
     value: "🐭",
     deck: "custom"
   },
-  {
-    value: "🐰",
-    deck: "custom"
-  },
+
   {
     value: "🐰",
     deck: "custom"
