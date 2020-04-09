@@ -7,6 +7,10 @@ function Table() {
 
   return (
     <>
+      <div className="f3 tc avenir pv2" id="deckInfo">
+        {deck}
+      </div>
+
       <CardList deckSelected={deck} />
 
       <footer id="footerBtm" className="bg-white black-80 tc avenir pv3">
