@@ -15,7 +15,7 @@ function Table() {
             onClick={() => {
               setDeck((deck = "storyPoints"));
             }}
-            className="noselect f5 f5-l link bg-animate black-80 hover-light-purple dib ph4 linkBtm"
+            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
           >
             StoryPoints
           </p>
@@ -24,7 +24,7 @@ function Table() {
               setDeck((deck = "tshirt"));
               console.log(`you changed the deck to: ${deck}`);
             }}
-            className="noselect f5 f5-l link bg-animate black-80 hover-light-purple dib ph4 linkBtm"
+            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib linkBtm"
           >
             T-Shirt
           </p>
@@ -33,7 +33,7 @@ function Table() {
               setDeck((deck = "fibonacci"));
               console.log(`you changed the deck to: ${deck}`);
             }}
-            className="noselect f5 f5-l link bg-animate black-80 hover-light-purple dib ph4 linkBtm"
+            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
           >
             Fibonacci
           </p>
@@ -42,7 +42,7 @@ function Table() {
               setDeck((deck = "custom"));
               console.log(`you changed the deck to: ${deck}`);
             }}
-            className="noselect f5 f5-l link bg-animate black-80 hover-light-purple dib ph4 linkBtm"
+            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
           >
             Custom
           </p>

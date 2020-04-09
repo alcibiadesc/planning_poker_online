@@ -118,14 +118,46 @@ export const baraja = [
     value: "144",
     deck: "fibonacci"
   },
-  {  // CUSTOM
-    value: "+",
+  {
+    // CUSTOM
+    value: "🐭",
     deck: "custom"
   },
-  { // COMMON
-    value: "?",
-    deck: "common",
+  {
+    value: "🐰",
+    deck: "custom"
   },
-
-
+  {
+    value: "🐰",
+    deck: "custom"
+  },
+  {
+    value: "🐶",
+    deck: "custom"
+  },
+  {
+    value: "🦁",
+    deck: "custom"
+  },
+  {
+    value: "🦄",
+    deck: "custom"
+  },
+  {
+    value: "🐲",
+    deck: "custom"
+  },
+  {
+    // COMMON
+    value: "?",
+    deck: "common"
+  },
+  {
+    value: "♾️",
+    deck: "common"
+  },
+  {
+    value: "☕",
+    deck: "common"
+  }
 ];
