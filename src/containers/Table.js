@@ -9,7 +9,7 @@ function Table() {
     <>
       <CardList deckSelected={deck} />
 
-      <footer id="footerBtm" className="bg-white black-80 tc avenir">
+      <footer id="footerBtm" className="bg-white black-80 tc avenir pv3">
         <nav className="bt tc mw7 center ">
           <p
             onClick={() => {
