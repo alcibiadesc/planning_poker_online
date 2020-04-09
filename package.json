@@ -10,6 +10,7 @@
     "fomantic-ui": "^2.8.4",
     "fomantic-ui-css": "^2.8.4",
     "framer": "^1.1.7",
+    "framer-motion": "^1.10.3",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

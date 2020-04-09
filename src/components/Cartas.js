@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Cartas.css";
 import Modal from "./Modal.js";
+import { motion } from "framer-motion";
 
 function Cartas({ value }) {
   const [modal, setModal] = useState(false);
@@ -11,7 +12,13 @@ function Cartas({ value }) {
 
   return (
     <>
-      <div className="carta grow center ma1">
+      <motion.div
+        animate={{
+          scale: [1.1, 0.9, 1]
+        }}
+        transition={{ duration: 0.8 }}
+        className="carta grow center ma1"
+      >
         <p
           id="cardRender"
           onClick={useModal}
@@ -20,7 +27,7 @@ function Cartas({ value }) {
         >
           {value}
         </p>
-      </div>
+      </motion.div>
       <div className="">
         <Modal modal={modal} valueCard={value} useModal={useModal} />
       </div>
