@@ -16,7 +16,9 @@ function Cartas({ value }) {
         animate={{
           scale: [1.1, 0.9, 1]
         }}
-        transition={{ duration: 0.8 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.5 }}
+        whileTap={{ scale: 0.9 }}
         className="carta grow center ma1"
       >
         <p

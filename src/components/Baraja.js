@@ -2,147 +2,147 @@ export const baraja = [
   {
     // T-SHIRT
     value: "XS",
-    deck: "tshirt"
+    deck: "T-Shirt"
   },
   {
     value: "S",
-    deck: "tshirt"
+    deck: "T-Shirt"
   },
   {
     value: "M",
-    deck: "tshirt"
+    deck: "T-Shirt"
   },
   {
     value: "L",
-    deck: "tshirt"
+    deck: "T-Shirt"
   },
   {
     value: "XL",
-    deck: "tshirt"
+    deck: "T-Shirt"
   },
   {
     value: "XXL",
-    deck: "tshirt"
+    deck: "T-Shirt"
   },
   {
     // STORYPOINTS
     value: "0",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "1/2",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "1",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "2",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "3",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "5",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "8",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "13",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "20",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "40",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     value: "100",
-    deck: "storyPoints"
+    deck: "StoryPoints"
   },
   {
     // FIBONACCI
     value: "0",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "1",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "2",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "3",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "5",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "8",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "13",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "21",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "34",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "55",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "89",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     value: "144",
-    deck: "fibonacci"
+    deck: "Fibonacci"
   },
   {
     // CUSTOM
     value: "🐭",
-    deck: "custom"
+    deck: "Custom"
   },
 
   {
     value: "🐰",
-    deck: "custom"
+    deck: "Custom"
   },
   {
     value: "🐶",
-    deck: "custom"
+    deck: "Custom"
   },
   {
     value: "🦁",
-    deck: "custom"
+    deck: "Custom"
   },
   {
     value: "🦄",
-    deck: "custom"
+    deck: "Custom"
   },
   {
     value: "🐲",
-    deck: "custom"
+    deck: "Custom"
   },
   {
     // COMMON

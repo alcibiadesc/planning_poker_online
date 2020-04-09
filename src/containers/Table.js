@@ -3,7 +3,7 @@ import "./Table.css";
 import CardList from "../components/CardList";
 
 function Table() {
-  let [deck, setDeck] = useState("fibonacci");
+  let [deck, setDeck] = useState("Fibonacci");
 
   return (
     <>
@@ -17,7 +17,7 @@ function Table() {
         <nav className="bt tc mw7 center ">
           <p
             onClick={() => {
-              setDeck((deck = "storyPoints"));
+              setDeck((deck = "StoryPoints"));
             }}
             className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
           >
@@ -25,7 +25,7 @@ function Table() {
           </p>
           <p
             onClick={() => {
-              setDeck((deck = "tshirt"));
+              setDeck((deck = "T-Shirt"));
               console.log(`you changed the deck to: ${deck}`);
             }}
             className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib linkBtm"
@@ -34,7 +34,7 @@ function Table() {
           </p>
           <p
             onClick={() => {
-              setDeck((deck = "fibonacci"));
+              setDeck((deck = "Fibonacci"));
               console.log(`you changed the deck to: ${deck}`);
             }}
             className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
@@ -43,7 +43,7 @@ function Table() {
           </p>
           <p
             onClick={() => {
-              setDeck((deck = "custom"));
+              setDeck((deck = "Custom"));
               console.log(`you changed the deck to: ${deck}`);
             }}
             className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
