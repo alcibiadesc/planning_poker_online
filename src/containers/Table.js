@@ -8,16 +8,17 @@ function Table() {
 
   let [addButtonNew, setAddButtonNew] = useState("");
 
-  const [addNewCard, setAddNewCard] = useState({});
+  const [customDeck, setAddNewCard] = useState(baraja);
+
+  let useAddNewCard = () => {
+    setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
+    console.log(customDeck);
+  };
 
   const [newCardName, setNewCardName] = useState("");
 
   const useNewCardName = event => {
     setNewCardName(event.target.value);
-  };
-
-  const useAddNewCard = event => {
-    setAddNewCard(baraja.push({ value: newCardName, deck: "Custom" }));
   };
 
   return (
@@ -44,7 +45,7 @@ function Table() {
           ""
         )}
       </div>
-      <CardList deckSelected={deck} />
+      <CardList deckSelected={deck} customDeck={customDeck} />
 
       <footer id="footerBtm" className="bg-white black-80 tc avenir pv3">
         <nav className="bt tc mw7 center ">
