@@ -25,15 +25,20 @@ function Table() {
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
       <div className="w-100">
         {addButtonNew ? (
-          <div className="w-100 tc center pa3">
+          <div className="w-100 tc center pa2">
+            <input
+              className="mb3"
+              type="text"
+              value={newCardName}
+              onChange={useNewCardName}
+            />
+            <br />
             <div
               onClick={useAddNewCard}
               className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
             >
               Add a new Card
             </div>
-            <br />
-            <input type="text" value={newCardName} onChange={useNewCardName} />
           </div>
         ) : (
           ""
