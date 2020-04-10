@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/planning_poker_online/static/css/main.ab1c1bb3.chunk.css",
-    "main.js": "/planning_poker_online/static/js/main.50dd89c2.chunk.js",
-    "main.js.map": "/planning_poker_online/static/js/main.50dd89c2.chunk.js.map",
+    "main.css": "/planning_poker_online/static/css/main.fd02e632.chunk.css",
+    "main.js": "/planning_poker_online/static/js/main.d68d8b74.chunk.js",
+    "main.js.map": "/planning_poker_online/static/js/main.d68d8b74.chunk.js.map",
     "runtime-main.js": "/planning_poker_online/static/js/runtime-main.d21be726.js",
     "runtime-main.js.map": "/planning_poker_online/static/js/runtime-main.d21be726.js.map",
     "static/css/2.07548e1c.chunk.css": "/planning_poker_online/static/css/2.07548e1c.chunk.css",
-    "static/js/2.eb5cc922.chunk.js": "/planning_poker_online/static/js/2.eb5cc922.chunk.js",
-    "static/js/2.eb5cc922.chunk.js.map": "/planning_poker_online/static/js/2.eb5cc922.chunk.js.map",
+    "static/js/2.e4cdb2a4.chunk.js": "/planning_poker_online/static/js/2.e4cdb2a4.chunk.js",
+    "static/js/2.e4cdb2a4.chunk.js.map": "/planning_poker_online/static/js/2.e4cdb2a4.chunk.js.map",
     "index.html": "/planning_poker_online/index.html",
-    "precache-manifest.793f47e2ac9866b431e0c424d6a09ca9.js": "/planning_poker_online/precache-manifest.793f47e2ac9866b431e0c424d6a09ca9.js",
+    "precache-manifest.afc060f789d5be904545a49b452748d4.js": "/planning_poker_online/precache-manifest.afc060f789d5be904545a49b452748d4.js",
     "service-worker.js": "/planning_poker_online/service-worker.js",
     "static/css/2.07548e1c.chunk.css.map": "/planning_poker_online/static/css/2.07548e1c.chunk.css.map",
-    "static/css/main.ab1c1bb3.chunk.css.map": "/planning_poker_online/static/css/main.ab1c1bb3.chunk.css.map",
-    "static/js/2.eb5cc922.chunk.js.LICENSE.txt": "/planning_poker_online/static/js/2.eb5cc922.chunk.js.LICENSE.txt"
+    "static/css/main.fd02e632.chunk.css.map": "/planning_poker_online/static/css/main.fd02e632.chunk.css.map",
+    "static/js/2.e4cdb2a4.chunk.js.LICENSE.txt": "/planning_poker_online/static/js/2.e4cdb2a4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d21be726.js",
     "static/css/2.07548e1c.chunk.css",
-    "static/js/2.eb5cc922.chunk.js",
-    "static/css/main.ab1c1bb3.chunk.css",
-    "static/js/main.50dd89c2.chunk.js"
+    "static/js/2.e4cdb2a4.chunk.js",
+    "static/css/main.fd02e632.chunk.css",
+    "static/js/main.d68d8b74.chunk.js"
   ]
 }
