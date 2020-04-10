@@ -3,7 +3,7 @@ import "./Cartas.css";
 import Modal from "./Modal.js";
 import { motion } from "framer-motion";
 
-function Cartas({ value }) {
+function Cartas({ value, customDeck }) {
   const [modal, setModal] = useState(false);
 
   const useModal = () => {
@@ -15,6 +15,9 @@ function Cartas({ value }) {
 
   const useDeleteCard = () => {
     setDeleteCard("carta grow center ma1 hide");
+    let position = customDeck.map(card => card.value).indexOf(value);
+    delete customDeck[position];
+    console.log(customDeck);
   };
 
   return (

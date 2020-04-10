@@ -17,7 +17,13 @@ const CardList = ({ deckSelected, customDeck }) => {
 
   // render the cardValue filtered with map and inser a Key = card value.
   const cardValue = cardFiltered.map((item, index) => {
-    return <Cartas key={uuidv4()} value={cardFiltered[index].value} />;
+    return (
+      <Cartas
+        key={uuidv4()}
+        value={cardFiltered[index].value}
+        customDeck={customDeck}
+      />
+    );
   });
   return <>{cardValue}</>;
 };
