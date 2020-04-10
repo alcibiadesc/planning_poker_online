@@ -24,6 +24,24 @@ export const baraja = [
     value: "XXL",
     deck: "T-Shirt"
   },
+
+  {
+    value: "?",
+    deck: "T-Shirt"
+  },
+  {
+    value: "♾️",
+    deck: "T-Shirt"
+  },
+  {
+    value: "☕",
+    deck: "T-Shirt"
+  },
+  {
+    // STORYPOINTS
+    value: "0",
+    deck: "StoryPoints"
+  },
   {
     // STORYPOINTS
     value: "0",
@@ -67,6 +85,18 @@ export const baraja = [
   },
   {
     value: "100",
+    deck: "StoryPoints"
+  },
+  {
+    value: "?",
+    deck: "StoryPoints"
+  },
+  {
+    value: "♾️",
+    deck: "StoryPoints"
+  },
+  {
+    value: "☕",
     deck: "StoryPoints"
   },
   {
@@ -119,42 +149,15 @@ export const baraja = [
     deck: "Fibonacci"
   },
   {
-    // CUSTOM
-    value: "🐭",
-    deck: "Custom"
-  },
-
-  {
-    value: "🐰",
-    deck: "Custom"
-  },
-  {
-    value: "🐶",
-    deck: "Custom"
-  },
-  {
-    value: "🦁",
-    deck: "Custom"
-  },
-  {
-    value: "🦄",
-    deck: "Custom"
-  },
-  {
-    value: "🐲",
-    deck: "Custom"
-  },
-  {
-    // COMMON
     value: "?",
-    deck: "Common"
+    deck: "Fibonacci"
   },
   {
     value: "♾️",
-    deck: "Common"
+    deck: "Fibonacci"
   },
   {
     value: "☕",
-    deck: "Common"
+    deck: "Fibonacci"
   }
 ];

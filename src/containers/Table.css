@@ -6,10 +6,6 @@
   color: white;
 }
 
-#deckInfo {
-  width: 100%;
-}
-
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
