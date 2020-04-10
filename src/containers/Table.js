@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./Table.css";
 import CardList from "../components/CardList";
-import { baraja } from "../components/Baraja.js";
 
 function Table() {
   let [deck, setDeck] = useState("Fibonacci");
 
   let [addButtonNew, setAddButtonNew] = useState("");
 
-  const [customDeck, setAddNewCard] = useState(baraja);
+  const [customDeck, setAddNewCard] = useState([{}]);
 
   let useAddNewCard = () => {
     setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
