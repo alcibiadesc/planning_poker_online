@@ -10,6 +10,13 @@ function Cartas({ value }) {
     setModal(!modal);
   };
 
+  // hide card with css
+  const [deleteCard, setDeleteCard] = useState("carta grow center ma1");
+
+  const useDeleteCard = () => {
+    setDeleteCard("carta grow center ma1 hide");
+  };
+
   return (
     <>
       <motion.div
@@ -19,7 +26,7 @@ function Cartas({ value }) {
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5 }}
         whileTap={{ scale: 0.9 }}
-        className="carta grow center ma1"
+        className={deleteCard}
       >
         <p
           id="cardRender"
@@ -31,7 +38,12 @@ function Cartas({ value }) {
         </p>
       </motion.div>
       <div className="">
-        <Modal modal={modal} valueCard={value} useModal={useModal} />
+        <Modal
+          modal={modal}
+          valueCard={value}
+          useModal={useModal}
+          useDeleteCard={useDeleteCard}
+        />
       </div>
     </>
   );

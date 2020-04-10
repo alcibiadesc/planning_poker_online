@@ -7,7 +7,7 @@ function Table() {
 
   let [addButtonNew, setAddButtonNew] = useState("");
 
-  const [customDeck, setAddNewCard] = useState([{}]);
+  const [customDeck, setAddNewCard] = useState([]);
 
   let useAddNewCard = () => {
     setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
