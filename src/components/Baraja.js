@@ -147,14 +147,14 @@ export const baraja = [
   {
     // COMMON
     value: "?",
-    deck: "common"
+    deck: "Common"
   },
   {
     value: "♾️",
-    deck: "common"
+    deck: "Common"
   },
   {
     value: "☕",
-    deck: "common"
+    deck: "Common"
   }
 ];

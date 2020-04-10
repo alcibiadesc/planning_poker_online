@@ -2,15 +2,10 @@ import React from "react";
 import Cartas from "./Cartas";
 import { baraja } from "./Baraja";
 
-
-
-const CardList = ({deckSelected}) => {
-
-
+const CardList = ({ deckSelected }) => {
   // filter the decks with the deck value and common cards like "?"
   const cardFiltered = baraja.filter(
-
-    item => item.deck === deckSelected || item.deck === "common"
+    item => item.deck === deckSelected || item.deck === "Common"
   );
 
   // render the cardValue filtered with map and inser a Key = card value.
