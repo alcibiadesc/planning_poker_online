@@ -15,8 +15,11 @@ function Cartas({ value, customDeck }) {
 
   const useDeleteCard = () => {
     setDeleteCard("carta grow center ma1 hide");
-    let position = customDeck.map(card => card.value).indexOf(value);
-    delete customDeck[position];
+    if (customDeck.length >= 1) {
+      let position = customDeck.map(card => card.value).indexOf(value);
+      customDeck.splice(position, 1);
+    }
+
     console.log(customDeck);
   };
 

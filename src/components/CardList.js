@@ -7,7 +7,7 @@ const CardList = ({ deckSelected, customDeck }) => {
   // filter the decks with the deck value and common cards like "?"
 
   let barajaSeleccionada = baraja;
-  deckSelected === "Custom"
+  customDeck.length > 0 && deckSelected === "Custom"
     ? (barajaSeleccionada = customDeck)
     : (barajaSeleccionada = baraja);
 
