@@ -37,11 +37,7 @@ export const baraja = [
     value: "☕",
     deck: "T-Shirt"
   },
-  {
-    // STORYPOINTS
-    value: "0",
-    deck: "StoryPoints"
-  },
+
   {
     // STORYPOINTS
     value: "0",
