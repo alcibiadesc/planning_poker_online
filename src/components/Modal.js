@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Modal.css";
 import Delete from "./icons/baseline_delete_white_18dp.png";
 
