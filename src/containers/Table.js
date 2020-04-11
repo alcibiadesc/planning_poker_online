@@ -68,13 +68,14 @@ function Table() {
                 href="#0"
                 type="Reset"
                 onClick={useAddNewCard}
-                className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
+                className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect "
               >
-                Add a new Card
+                New Card
               </button>
               <button
                 type="button"
                 name="button"
+                id="deleteAll"
                 className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
                 onClick={deleteAllCustomCards}
               >

@@ -19,3 +19,7 @@
 button {
   border: solid black;
 }
+#deleteAll {
+  background-color: indianred;
+  color: white;
+}
