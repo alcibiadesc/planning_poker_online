@@ -8,7 +8,7 @@ function Attribution() {
         made with{" "}
         <span role="img" aria-label="heart">
           {" "}
-          ❤️
+          ❤️{" "}
         </span>
         by{" "}
         <a className="link" href="https://www.linkedin.com/in/alcibiadesc">

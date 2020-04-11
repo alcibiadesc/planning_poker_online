@@ -3,7 +3,7 @@ import "./Table.css";
 import CardList from "../components/CardList";
 
 function Table() {
-  let [deck, setDeck] = useState("Fibonacci");
+  let [deck, setDeck] = useState("StoryPoints");
 
   let [addButtonNew, setAddButtonNew] = useState("");
 
