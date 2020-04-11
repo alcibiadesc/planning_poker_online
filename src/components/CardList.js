@@ -22,6 +22,7 @@ const CardList = ({ deckSelected, customDeck }) => {
         key={uuidv4()}
         value={cardFiltered[index].value}
         customDeck={customDeck}
+        deckSelected={deckSelected}
       />
     );
   });

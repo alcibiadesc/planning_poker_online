@@ -36,6 +36,7 @@
   color: white;
   border-radius: 10px;
   background-size: 400% 400%;
+  overflow-wrap: break-word;
 
   -webkit-animation: AnimationName 12s ease infinite;
   -moz-animation: AnimationName 12s ease infinite;
@@ -79,6 +80,7 @@
 
 .contend-modal {
   padding-top: 45%;
-  font-size: 7rem;
+
+  font-size: 6rem;
   margin: 0;
 }

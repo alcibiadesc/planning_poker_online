@@ -3,7 +3,7 @@ import "./Cartas.css";
 import Modal from "./Modal.js";
 import { motion } from "framer-motion";
 
-function Cartas({ value, customDeck }) {
+function Cartas({ value, customDeck, deckSelected }) {
   const [modal, setModal] = useState(false);
 
   const useModal = () => {
@@ -49,6 +49,7 @@ function Cartas({ value, customDeck }) {
           valueCard={value}
           useModal={useModal}
           useDeleteCard={useDeleteCard}
+          deckSelected={deckSelected}
         />
       </div>
     </>
