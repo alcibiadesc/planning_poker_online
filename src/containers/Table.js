@@ -72,7 +72,6 @@ function Table() {
       <CardList
         deckSelected={deck}
         customDeck={customDeck}
-        storedCard={storedCard}
         storeCard={storeCard}
       />
 

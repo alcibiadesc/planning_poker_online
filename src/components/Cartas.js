@@ -3,7 +3,7 @@ import "./Cartas.css";
 import Modal from "./Modal.js";
 import { motion } from "framer-motion";
 
-function Cartas({ value, customDeck, deckSelected, storedCard, storeCard }) {
+function Cartas({ value, customDeck, deckSelected, storeCard }) {
   useEffect(() => {
     storeCard(customDeck);
   });
@@ -22,11 +22,7 @@ function Cartas({ value, customDeck, deckSelected, storedCard, storeCard }) {
     if (customDeck.length >= 1) {
       let position = customDeck.map(card => card.value).indexOf(value);
       customDeck.splice(position, 1);
-      storedCard.splice(position, 1);
-      console.log(storedCard);
     }
-
-    console.log(customDeck);
   };
 
   return (
