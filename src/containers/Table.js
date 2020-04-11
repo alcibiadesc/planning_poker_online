@@ -30,19 +30,19 @@ function Table() {
               <input
                 className="mb3 tc"
                 type="text"
-                value={newCardName}
                 onChange={useNewCardName}
                 maxLength="15"
                 placeholder="Card Value"
               />
               <br />
-              <div
-                type="submit"
+              <button
+                href="#0"
+                type="Reset"
                 onClick={useAddNewCard}
                 className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
               >
                 Add a new Card
-              </div>
+              </button>
             </div>
           </form>
         ) : (
