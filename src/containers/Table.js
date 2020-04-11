@@ -14,7 +14,7 @@ function Table() {
     console.log(customDeck);
   };
 
-  const [newCardName, setNewCardName] = useState("");
+  let [newCardName, setNewCardName] = useState("");
 
   const useNewCardName = event => {
     setNewCardName(event.target.value);
@@ -25,21 +25,26 @@ function Table() {
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
       <div className="w-100">
         {addButtonNew ? (
-          <div className="w-100 tc center pa2">
-            <input
-              className="mb3"
-              type="text"
-              value={newCardName}
-              onChange={useNewCardName}
-            />
-            <br />
-            <div
-              onClick={useAddNewCard}
-              className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
-            >
-              Add a new Card
+          <form>
+            <div className="w-100 tc center pa2">
+              <input
+                className="mb3 tc"
+                type="text"
+                value={newCardName}
+                onChange={useNewCardName}
+                maxLength="15"
+                placeholder="Card Value"
+              />
+              <br />
+              <div
+                type="submit"
+                onClick={useAddNewCard}
+                className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
+              >
+                Add a new Card
+              </div>
             </div>
-          </div>
+          </form>
         ) : (
           ""
         )}

@@ -13,7 +13,7 @@ const Modal = ({ modal, valueCard, useModal, useDeleteCard, deckSelected }) => {
           {deckSelected === "Custom" ? (
             <img src={Delete} alt="Delete" onClick={useDeleteCard} />
           ) : (
-            <p></p>
+            <p className="pa2"> </p>
           )}
           <p className="contend-modal noselect tc avenir f1">{valueCard}</p>
         </div>
