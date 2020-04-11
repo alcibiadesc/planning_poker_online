@@ -40,6 +40,15 @@ function Table() {
     setNewCardName(event.target.value);
   };
 
+  // DELETE ALL CUSTOM cards
+
+  const [deleteCustomCards, setDeleteCustomCards] = useState();
+
+  const deleteAllCustomCards = () => {
+    console.log("all decks was deleted:" + deleteCustomCards);
+    setDeleteCustomCards(customDeck.splice(0, customDeck.length));
+  };
+
   return (
     <>
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
@@ -63,12 +72,21 @@ function Table() {
               >
                 Add a new Card
               </button>
+              <button
+                type="button"
+                name="button"
+                className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
+                onClick={deleteAllCustomCards}
+              >
+                Delete All
+              </button>
             </div>
           </form>
         ) : (
           ""
         )}
       </div>
+
       <CardList
         deckSelected={deck}
         customDeck={customDeck}
