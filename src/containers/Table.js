@@ -73,6 +73,7 @@ function Table() {
         deckSelected={deck}
         customDeck={customDeck}
         storedCard={storedCard}
+        storeCard={storeCard}
       />
 
       <footer id="footerBtm" className="bg-white black-80 tc avenir pv3">

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Cartas.css";
 import Modal from "./Modal.js";
 import { motion } from "framer-motion";
 
-function Cartas({ value, customDeck, deckSelected, storedCard }) {
+function Cartas({ value, customDeck, deckSelected, storedCard, storeCard }) {
+  useEffect(() => {
+    storeCard(customDeck);
+  });
+
   const [modal, setModal] = useState(false);
 
   const useModal = () => {
