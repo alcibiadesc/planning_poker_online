@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Table.css";
 import CardList from "../components/CardList";
 
-// LOCAL STORAGE
+// LOCAL STORAGE OF CUSTOM CARDS
 const CARD_CUSTOM_STORAGE_KEY = "CARD_CUSTOM_STORAGE_KEY";
 
 const storeCard = cardMap => {
@@ -14,6 +14,7 @@ const readStoredCards = () => {
   return cardMap ? cardMap : [{ value: "inicial" }];
 };
 
+// MAIN FUNCTION
 function Table() {
   // Local Storage
   useEffect(() => {
@@ -22,10 +23,19 @@ function Table() {
 
   const storedCard = readStoredCards();
 
-  //END
+  // FILTER DECKS
   let [deck, setDeck] = useState("StoryPoints");
 
+  // ADD Custom Menu when deck selectec is "Custom"
   let [addButtonNew, setAddButtonNew] = useState("");
+
+  // Get input card value from the input
+  let [newCardName, setNewCardName] = useState("");
+  const useNewCardName = event => {
+    setNewCardName(event.target.value);
+  };
+
+  // Add new cards to array copy of CustomDeck
 
   const [customDeck, setAddNewCard] = useState(storedCard);
 
@@ -33,12 +43,6 @@ function Table() {
     setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
     console.log(customDeck);
     setNewCardName("");
-  };
-
-  let [newCardName, setNewCardName] = useState("");
-
-  const useNewCardName = event => {
-    setNewCardName(event.target.value);
   };
 
   // Press center  const handleKeyPress = event => {
