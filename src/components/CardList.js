@@ -3,7 +3,7 @@ import Cartas from "./Cartas";
 import { v4 as uuidv4 } from "uuid";
 import { baraja } from "./Baraja";
 
-const CardList = ({ deckSelected, customDeck }) => {
+const CardList = ({ deckSelected, customDeck, storedCard }) => {
   // filter the decks with the deck value and common cards like "?"
 
   let barajaSeleccionada = baraja;
@@ -23,6 +23,7 @@ const CardList = ({ deckSelected, customDeck }) => {
         value={cardFiltered[index].value}
         customDeck={customDeck}
         deckSelected={deckSelected}
+        storedCard={storedCard}
       />
     );
   });

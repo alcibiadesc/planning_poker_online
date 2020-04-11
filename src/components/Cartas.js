@@ -3,7 +3,7 @@ import "./Cartas.css";
 import Modal from "./Modal.js";
 import { motion } from "framer-motion";
 
-function Cartas({ value, customDeck, deckSelected }) {
+function Cartas({ value, customDeck, deckSelected, storedCard }) {
   const [modal, setModal] = useState(false);
 
   const useModal = () => {
@@ -18,6 +18,8 @@ function Cartas({ value, customDeck, deckSelected }) {
     if (customDeck.length >= 1) {
       let position = customDeck.map(card => card.value).indexOf(value);
       customDeck.splice(position, 1);
+      storedCard.splice(position, 1);
+      console.log(storedCard);
     }
 
     console.log(customDeck);

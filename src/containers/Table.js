@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Table.css";
 import CardList from "../components/CardList";
 
+// LOCAL STORAGE
 const CARD_CUSTOM_STORAGE_KEY = "CARD_CUSTOM_STORAGE_KEY";
 
 const storeCard = cardMap => {
@@ -68,7 +69,11 @@ function Table() {
           ""
         )}
       </div>
-      <CardList deckSelected={deck} customDeck={customDeck} />
+      <CardList
+        deckSelected={deck}
+        customDeck={customDeck}
+        storedCard={storedCard}
+      />
 
       <footer id="footerBtm" className="bg-white black-80 tc avenir pv3">
         <nav className="bt tc mw7 center ">
