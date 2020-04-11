@@ -32,12 +32,22 @@ function Table() {
   let useAddNewCard = () => {
     setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
     console.log(customDeck);
+    setNewCardName("");
   };
 
   let [newCardName, setNewCardName] = useState("");
 
   const useNewCardName = event => {
     setNewCardName(event.target.value);
+  };
+
+  // Press center  const handleKeyPress = event => {
+  const handleKeyPress = event => {
+    if (event.key === "Enter") {
+      setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
+
+      setNewCardName("");
+    }
   };
 
   // DELETE ALL CUSTOM cards
@@ -54,35 +64,35 @@ function Table() {
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
       <div className="w-100">
         {addButtonNew ? (
-          <form>
-            <div className="w-100 tc center pa2">
-              <input
-                className="mb3 tc"
-                type="text"
-                onChange={useNewCardName}
-                maxLength="15"
-                placeholder="Card Value"
-              />
-              <br />
-              <button
-                href="#0"
-                type="Reset"
-                onClick={useAddNewCard}
-                className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect "
-              >
-                New Card
-              </button>
-              <button
-                type="button"
-                name="button"
-                id="deleteAll"
-                className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
-                onClick={deleteAllCustomCards}
-              >
-                Delete All
-              </button>
-            </div>
-          </form>
+          <div className="w-100 tc center pa2">
+            <input
+              className="mb3 tc"
+              type="text"
+              value={newCardName}
+              onChange={useNewCardName}
+              onKeyPress={handleKeyPress}
+              maxLength="15"
+              placeholder="Card Value"
+            />
+            <br />
+            <button
+              href="#0"
+              type="Reset"
+              onClick={useAddNewCard}
+              className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect "
+            >
+              New Card
+            </button>
+            <button
+              type="button"
+              name="button"
+              id="deleteAll"
+              className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect"
+              onClick={deleteAllCustomCards}
+            >
+              Delete All
+            </button>
+          </div>
         ) : (
           ""
         )}
