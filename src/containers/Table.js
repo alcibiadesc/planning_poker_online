@@ -120,7 +120,7 @@ function Table() {
               setDeck((deck = "StoryPoints"));
               setAddButtonNew(false);
             }}
-            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
+            className="noselect f5 f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
           >
             StoryPoints
           </p>
@@ -130,7 +130,7 @@ function Table() {
               console.log(`you changed the deck to: ${deck}`);
               setAddButtonNew(false);
             }}
-            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib linkBtm"
+            className="noselect f5 f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib linkBtm"
           >
             T-Shirt
           </p>
@@ -140,7 +140,7 @@ function Table() {
               console.log(`you changed the deck to: ${deck}`);
               setAddButtonNew(false);
             }}
-            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
+            className="noselect f5 f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
           >
             Fibonacci
           </p>
@@ -151,7 +151,7 @@ function Table() {
 
               setAddButtonNew(true);
             }}
-            className="noselect f5 mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
+            className="noselect f5 f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib  linkBtm"
           >
             Custom
           </p>
