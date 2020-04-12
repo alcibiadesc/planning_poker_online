@@ -5,16 +5,14 @@ import Table from "./Table";
 
 const App = () => {
   return (
-    <>
+    <React.Fragment>
       <TitleBar />
 
       <div className="flex flex-wrap">
         <Table />
       </div>
-      <div className="mb4 tc">
-        <Attribution />
-      </div>
-    </>
+      <Attribution />
+    </React.Fragment>
   );
 };
 
