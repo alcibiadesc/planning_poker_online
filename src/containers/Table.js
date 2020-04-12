@@ -3,6 +3,7 @@ import "./Table.css";
 import CardList from "../components/CardList";
 import { storeCard, readStoredCards } from "./CustomLocalStorage.js";
 import FooterMenu from "./FooterMenu";
+import CustomDeckMenu from "./CustomDeckMenu.js";
 
 // MAIN FUNCTION
 function Table() {
@@ -71,6 +72,9 @@ function Table() {
   return (
     <>
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
+
+      {/* Custom Menu */}
+
       <div className="w-100">
         {addButtonNew ? (
           <div className="w-100 tc center pa2">

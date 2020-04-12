@@ -11,7 +11,7 @@ const FooterMenu = ({ setDeck, setAddButtonNew, deck }) => {
         className="bt tc mw7 center "
         onClick={() => {
           setDeck((deck = decks[index]));
-          deck === "Custom" && setAddButtonNew(true);
+          deck === "Custom" ? setAddButtonNew(true) : setAddButtonNew(false);
         }}
       >
         <p className="noselect f5 f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib  linkBtm">
