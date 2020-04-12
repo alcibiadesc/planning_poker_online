@@ -14,17 +14,6 @@ function Cartas({ value, customDeck, deckSelected, storeCard }) {
     setModal(!modal);
   };
 
-  // hide card with css
-  const [deleteCard, setDeleteCard] = useState("carta grow center ma1");
-
-  const useDeleteCard = () => {
-    setDeleteCard("carta grow center ma1 hide");
-    if (customDeck.length >= 1) {
-      let position = customDeck.map(card => card.value).indexOf(value);
-      customDeck.splice(position, 1);
-    }
-  };
-
   return (
     <>
       <motion.div
@@ -34,7 +23,7 @@ function Cartas({ value, customDeck, deckSelected, storeCard }) {
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5 }}
         whileTap={{ scale: 0.9 }}
-        className={deleteCard}
+        className="carta grow center ma1"
       >
         <p
           id="cardRender"
@@ -51,9 +40,9 @@ function Cartas({ value, customDeck, deckSelected, storeCard }) {
       {modal && (
         <div onClick={useModal}>
           <Modal
-            valueCard={value}
-            useDeleteCard={useDeleteCard}
+            value={value}
             deckSelected={deckSelected}
+            customDeck={customDeck}
           />
         </div>
       )}
