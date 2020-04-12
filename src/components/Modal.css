@@ -24,10 +24,6 @@
   }
 }
 
-.md-modal-hide {
-  display: none;
-}
-
 .card-modal {
   margin: auto;
   width: 20em;
@@ -80,7 +76,6 @@
 
 .contend-modal {
   padding-top: 45%;
-
   font-size: 6rem;
   margin: 0;
 }

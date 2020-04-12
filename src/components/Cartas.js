@@ -3,7 +3,7 @@ import "./Cartas.css";
 import Modal from "./Modal.js";
 import { motion } from "framer-motion";
 
-function Cartas({ value, customDeck, deckSelected, storeCard }) {
+function Cartas({ value, customDeck, deckSelected, storeCard, useDeleteCard }) {
   useEffect(() => {
     storeCard(customDeck);
   });
@@ -43,6 +43,8 @@ function Cartas({ value, customDeck, deckSelected, storeCard }) {
             value={value}
             deckSelected={deckSelected}
             customDeck={customDeck}
+            storeCard={storeCard}
+            useDeleteCard={useDeleteCard}
           />
         </div>
       )}

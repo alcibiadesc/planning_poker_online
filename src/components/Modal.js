@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Modal.css";
 import Delete from "./icons/baseline_delete_white_18dp.png";
 
-const Modal = ({ value, deckSelected, customDeck }) => {
-  const [deleteCard, setDeleteCard] = useState();
-
-  const useDeleteCard = () => {
-    setDeleteCard(
-      customDeck.length >= 1 &&
-        customDeck.splice(customDeck.map(card => card.value).indexOf(value), 1)
-    );
-  };
-
+const Modal = ({
+  value,
+  deckSelected,
+  customDeck,
+  storeCard,
+  useDeleteCard
+}) => {
   return (
     <React.Fragment>
       <div className="md-modal-show">

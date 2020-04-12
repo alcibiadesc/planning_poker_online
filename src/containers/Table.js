@@ -52,6 +52,21 @@ function Table() {
     setDeleteCustomCards(customDeck.splice(0, customDeck.length));
   };
 
+  // DELETE 1 Card inside Modal
+
+  const [deleteCard, setDeleteCard] = useState();
+
+  const useDeleteCard = () => {
+    setDeleteCard(
+      customDeck.length >= 1 &&
+        customDeck.splice(
+          customDeck.map(card => card.value).indexOf(customDeck.value),
+          1
+        )
+    );
+    console.log("you deleted:" + deleteCard);
+  };
+
   return (
     <>
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
@@ -95,6 +110,7 @@ function Table() {
         deckSelected={deck}
         customDeck={customDeck}
         storeCard={storeCard}
+        useDeleteCard={useDeleteCard}
       />
 
       <footer id="footerBtm" className="bg-white black-80 tc avenir pv3">
