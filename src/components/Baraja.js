@@ -1,4 +1,4 @@
-export const decks = ["T-Shirt", "StoryPoints", "Fibonacci", "Custom"];
+export const decks = ["StoryPoints", "T-Shirt", "Fibonacci", "Custom"];
 
 export const baraja = [
   {
