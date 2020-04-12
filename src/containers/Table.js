@@ -1,18 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Table.css";
 import CardList from "../components/CardList";
-
-// LOCAL STORAGE OF CUSTOM CARDS
-const CARD_CUSTOM_STORAGE_KEY = "CARD_CUSTOM_STORAGE_KEY";
-
-const storeCard = cardMap => {
-  localStorage.setItem(CARD_CUSTOM_STORAGE_KEY, JSON.stringify(cardMap));
-};
-
-const readStoredCards = () => {
-  const cardMap = JSON.parse(localStorage.getItem(CARD_CUSTOM_STORAGE_KEY));
-  return cardMap ? cardMap : [{ value: "inicial" }];
-};
+import { storeCard, readStoredCards } from "./CustomLocalStorage.js";
 
 // MAIN FUNCTION
 function Table() {
