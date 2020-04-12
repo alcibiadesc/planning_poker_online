@@ -3,7 +3,6 @@ import "./Table.css";
 import CardList from "../components/CardList";
 import { storeCard, readStoredCards } from "./CustomLocalStorage.js";
 import FooterMenu from "./FooterMenu";
-import CustomDeckMenu from "./CustomDeckMenu.js";
 
 // MAIN FUNCTION
 function Table() {
