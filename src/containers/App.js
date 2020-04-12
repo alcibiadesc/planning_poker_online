@@ -7,10 +7,7 @@ const App = () => {
   return (
     <React.Fragment>
       <TitleBar />
-
-      <div className="flex flex-wrap">
-        <Table />
-      </div>
+      <Table />
       <Attribution />
     </React.Fragment>
   );

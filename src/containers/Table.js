@@ -70,28 +70,29 @@ function Table() {
   };
 
   return (
-    <>
-      <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
+    <React.Fragment>
+      <div className="flex flex-wrap">
+        <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
 
-      {deck === "Custom" && (
-        <CustomDeckMenu
-          newCardName={newCardName}
-          useNewCardName={useNewCardName}
-          handleKeyPress={handleKeyPress}
-          useAddNewCard={useAddNewCard}
-          deleteAllCustomCards={deleteAllCustomCards}
+        {deck === "Custom" && (
+          <CustomDeckMenu
+            newCardName={newCardName}
+            useNewCardName={useNewCardName}
+            handleKeyPress={handleKeyPress}
+            useAddNewCard={useAddNewCard}
+            deleteAllCustomCards={deleteAllCustomCards}
+          />
+        )}
+        <CardList
+          deckSelected={deck}
+          customDeck={customDeck}
+          storeCard={storeCard}
+          useDeleteCard={useDeleteCard}
         />
-      )}
 
-      <CardList
-        deckSelected={deck}
-        customDeck={customDeck}
-        storeCard={storeCard}
-        useDeleteCard={useDeleteCard}
-      />
-
-      <FooterMenu setDeck={setDeck} deck={deck} />
-    </>
+        <FooterMenu setDeck={setDeck} deck={deck} />
+      </div>
+    </React.Fragment>
   );
 }
 
