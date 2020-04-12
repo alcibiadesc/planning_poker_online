@@ -32,7 +32,7 @@ export const baraja = [
     deck: "T-Shirt"
   },
   {
-    value: "♾️",
+    value: "∞",
     deck: "T-Shirt"
   },
   {
@@ -90,7 +90,7 @@ export const baraja = [
     deck: "StoryPoints"
   },
   {
-    value: "♾️",
+    value: "∞",
     deck: "StoryPoints"
   },
   {
@@ -151,7 +151,7 @@ export const baraja = [
     deck: "Fibonacci"
   },
   {
-    value: "♾️",
+    value: "∞",
     deck: "Fibonacci"
   },
   {
