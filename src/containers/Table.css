@@ -1,11 +1,3 @@
-#footerBtm {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-}
-
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -19,6 +11,7 @@
 button {
   border: solid black;
 }
+
 #deleteAll {
   background-color: indianred;
   color: white;

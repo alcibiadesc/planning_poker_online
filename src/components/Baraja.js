@@ -1,3 +1,5 @@
+export const decks = ["T-Shirt", "StoryPoints", "Fibonacci", "Custom"];
+
 export const baraja = [
   {
     // T-SHIRT
