@@ -13,7 +13,7 @@ const FooterMenu = ({ setDeck, deck }) => {
           setDeck((deck = decks[index]));
         }}
       >
-        <p className="noselect f5 f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib  linkBtm">
+        <p className="noselect f6 f4-m f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib  linkBtm">
           {decks[index]}
         </p>
       </div>
