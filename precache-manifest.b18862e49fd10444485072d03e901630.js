@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eef240e241b81b3f8bdbcdb6f612f1b0",
+    "revision": "c1fdd4a0bc8b90235f3b08a8af93233b",
     "url": "/planning_poker_online/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/planning_poker_online/static/css/2.3b6f1bda.chunk.css"
   },
   {
-    "revision": "dd1a3b96018466a3973a",
+    "revision": "9f210366fbde71423964",
     "url": "/planning_poker_online/static/css/main.468c7030.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/planning_poker_online/static/js/2.e61bf28c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dd1a3b96018466a3973a",
-    "url": "/planning_poker_online/static/js/main.94f58656.chunk.js"
+    "revision": "9f210366fbde71423964",
+    "url": "/planning_poker_online/static/js/main.0d53be68.chunk.js"
   },
   {
     "revision": "4e55b91609f0a857ab4c",
