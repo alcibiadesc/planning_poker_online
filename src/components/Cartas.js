@@ -45,12 +45,13 @@ function Cartas({ value, customDeck, deckSelected, storeCard }) {
           {value}
         </p>
       </motion.div>
-      <div className="">
+
+      {/* Modal Card */}
+
+      <div onClick={useModal}>
         {modal && (
           <Modal
-            modal={modal}
             valueCard={value}
-            useModal={useModal}
             useDeleteCard={useDeleteCard}
             deckSelected={deckSelected}
           />
