@@ -70,12 +70,6 @@ function Table() {
 
   return (
     <>
-      <FooterMenu
-        setDeck={setDeck}
-        deck={deck}
-        setAddButtonNew={setAddButtonNew}
-      />
-
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
       <div className="w-100">
         {addButtonNew ? (
@@ -118,6 +112,12 @@ function Table() {
         customDeck={customDeck}
         storeCard={storeCard}
         useDeleteCard={useDeleteCard}
+      />
+
+      <FooterMenu
+        setDeck={setDeck}
+        deck={deck}
+        setAddButtonNew={setAddButtonNew}
       />
     </>
   );

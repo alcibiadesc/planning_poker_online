@@ -28,7 +28,8 @@ const CardList = ({ deckSelected, customDeck, storeCard, useDeleteCard }) => {
       />
     );
   });
-  return <>{cardValue}</>;
+
+  return <React.Fragment>{cardValue}</React.Fragment>;
 };
 
 export default CardList;
