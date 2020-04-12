@@ -48,15 +48,15 @@ function Cartas({ value, customDeck, deckSelected, storeCard }) {
 
       {/* Modal Card */}
 
-      <div onClick={useModal}>
-        {modal && (
+      {modal && (
+        <div onClick={useModal}>
           <Modal
             valueCard={value}
             useDeleteCard={useDeleteCard}
             deckSelected={deckSelected}
           />
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 }
