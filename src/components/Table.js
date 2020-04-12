@@ -36,7 +36,7 @@ function Table() {
     setNewCardName("");
   };
 
-  // Press center  const handleKeyPress = event => {
+  // Press enter  const handleKeyPress = event => {
   const handleKeyPress = event => {
     if (event.key === "Enter") {
       setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
