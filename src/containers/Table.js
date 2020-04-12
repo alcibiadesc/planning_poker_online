@@ -20,9 +20,6 @@ function Table() {
   // FILTER DECKS
   let [deck, setDeck] = useState("StoryPoints");
 
-  // ADD Custom Menu when deck selectec is "Custom"
-  let [addButtonNew, setAddButtonNew] = useState("");
-
   // Get input card value from the input
   let [newCardName, setNewCardName] = useState("");
   const useNewCardName = event => {
@@ -76,11 +73,8 @@ function Table() {
     <>
       <div className="f3 tc avenir pv2 fl w-100 pa2">{deck}</div>
 
-      {/* Custom Menu */}
-
       {deck === "Custom" && (
         <CustomDeckMenu
-          addButtonNew={addButtonNew}
           newCardName={newCardName}
           useNewCardName={useNewCardName}
           handleKeyPress={handleKeyPress}
@@ -96,11 +90,7 @@ function Table() {
         useDeleteCard={useDeleteCard}
       />
 
-      <FooterMenu
-        setDeck={setDeck}
-        deck={deck}
-        setAddButtonNew={setAddButtonNew}
-      />
+      <FooterMenu setDeck={setDeck} deck={deck} />
     </>
   );
 }

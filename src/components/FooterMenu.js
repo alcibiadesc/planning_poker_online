@@ -3,7 +3,7 @@ import "./FooterMenu.css";
 import { decks } from "../components/Baraja.js";
 import { v4 as uuidv4 } from "uuid";
 
-const FooterMenu = ({ setDeck, setAddButtonNew, deck }) => {
+const FooterMenu = ({ setDeck, deck }) => {
   const decksOptions = decks.map((item, index) => {
     return (
       <div
@@ -11,7 +11,6 @@ const FooterMenu = ({ setDeck, setAddButtonNew, deck }) => {
         className="bt tc mw7 center "
         onClick={() => {
           setDeck((deck = decks[index]));
-          deck === "Custom" ? setAddButtonNew(true) : setAddButtonNew(false);
         }}
       >
         <p className="noselect f5 f3-l ph4-l mh2  link bg-animate black-80 hover-light-purple dib  linkBtm">
