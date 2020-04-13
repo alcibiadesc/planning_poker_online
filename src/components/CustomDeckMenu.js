@@ -2,9 +2,9 @@ import React from "react";
 
 const CustomDeckMenu = ({
   newCardName,
-  useNewCardName,
-  deleteAllCustomCards,
 
+  setDeleteCustomCards,
+  deleteCustomCards,
   customDeck,
   setAddNewCard,
   setNewCardName
@@ -23,6 +23,19 @@ const CustomDeckMenu = ({
     setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
     console.log(customDeck);
     setNewCardName("");
+  };
+
+  // Get input card value from the input
+
+  const useNewCardName = event => {
+    setNewCardName(event.target.value);
+  };
+
+  // DELETE ALL CUSTOM cards
+
+  const deleteAllCustomCards = () => {
+    console.log("all decks was deleted:" + deleteCustomCards);
+    setDeleteCustomCards(customDeck.splice(0, customDeck.length));
   };
 
   return (

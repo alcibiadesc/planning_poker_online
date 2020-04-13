@@ -20,24 +20,10 @@ function Table() {
   // FILTER DECKS
   let [deck, setDeck] = useState("StoryPoints");
 
-  // Get input card value from the input
-  let [newCardName, setNewCardName] = useState("");
-  const useNewCardName = event => {
-    setNewCardName(event.target.value);
-  };
-
-  // Add new cards to array copy of CustomDeck
-
-  const [customDeck, setAddNewCard] = useState(storedCard);
-
-  // DELETE ALL CUSTOM cards
-
-  const [deleteCustomCards, setDeleteCustomCards] = useState();
-
-  const deleteAllCustomCards = () => {
-    console.log("all decks was deleted:" + deleteCustomCards);
-    setDeleteCustomCards(customDeck.splice(0, customDeck.length));
-  };
+  // HOOKS
+  let [newCardName, setNewCardName] = useState(""); // Get input card value from the input
+  const [customDeck, setAddNewCard] = useState(storedCard); // Add new cards to array copy of CustomDeck
+  const [deleteCustomCards, setDeleteCustomCards] = useState(); // Delete all custom cards
 
   // DELETE 1 Card inside Modal
 
@@ -62,8 +48,8 @@ function Table() {
         {deck === "Custom" && (
           <CustomDeckMenu
             newCardName={newCardName}
-            useNewCardName={useNewCardName}
-            deleteAllCustomCards={deleteAllCustomCards}
+            setDeleteCustomCards={setDeleteCustomCards}
+            deleteCustomCards={deleteCustomCards}
             setAddNewCard={setAddNewCard}
             customDeck={customDeck}
             setNewCardName={setNewCardName}
