@@ -4,7 +4,7 @@ const CustomDeckMenu = ({
   newCardName,
   useNewCardName,
   deleteAllCustomCards,
-  useAddNewCard,
+
   customDeck,
   setAddNewCard,
   setNewCardName
@@ -16,6 +16,13 @@ const CustomDeckMenu = ({
 
       setNewCardName("");
     }
+  };
+
+  // Add new cards to array copy of CustomDeck
+  let useAddNewCard = () => {
+    setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
+    console.log(customDeck);
+    setNewCardName("");
   };
 
   return (

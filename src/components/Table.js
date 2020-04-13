@@ -30,12 +30,6 @@ function Table() {
 
   const [customDeck, setAddNewCard] = useState(storedCard);
 
-  let useAddNewCard = () => {
-    setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
-    console.log(customDeck);
-    setNewCardName("");
-  };
-
   // DELETE ALL CUSTOM cards
 
   const [deleteCustomCards, setDeleteCustomCards] = useState();
@@ -69,7 +63,6 @@ function Table() {
           <CustomDeckMenu
             newCardName={newCardName}
             useNewCardName={useNewCardName}
-            useAddNewCard={useAddNewCard}
             deleteAllCustomCards={deleteAllCustomCards}
             setAddNewCard={setAddNewCard}
             customDeck={customDeck}
