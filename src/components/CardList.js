@@ -3,14 +3,7 @@ import Cartas from "./Cartas";
 import { v4 as uuidv4 } from "uuid";
 import { baraja } from "./Baraja";
 
-const CardList = ({
-  deckSelected,
-  customDeck,
-  storeCard,
-  useDeleteCard,
-  setDeleteCard,
-  deleteCard
-}) => {
+const CardList = ({ deckSelected, customDeck, setDeleteCard, deleteCard }) => {
   // filter the decks with the deck value and common cards like "?"
 
   let barajaSeleccionada = baraja;
@@ -30,8 +23,6 @@ const CardList = ({
         value={cardFiltered[index].value}
         customDeck={customDeck}
         deckSelected={deckSelected}
-        storeCard={storeCard}
-        useDeleteCard={useDeleteCard}
         setDeleteCard={setDeleteCard}
         deleteCard={deleteCard}
       />

@@ -41,7 +41,6 @@ function Table() {
         <CardList
           deckSelected={deck}
           customDeck={customDeck}
-          storeCard={storeCard}
           setDeleteCard={setDeleteCard}
           deleteCard={deleteCard}
         />
