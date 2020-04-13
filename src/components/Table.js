@@ -36,15 +36,6 @@ function Table() {
     setNewCardName("");
   };
 
-  // Press enter  const handleKeyPress = event => {
-  const handleKeyPress = event => {
-    if (event.key === "Enter") {
-      setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
-
-      setNewCardName("");
-    }
-  };
-
   // DELETE ALL CUSTOM cards
 
   const [deleteCustomCards, setDeleteCustomCards] = useState();
@@ -78,9 +69,11 @@ function Table() {
           <CustomDeckMenu
             newCardName={newCardName}
             useNewCardName={useNewCardName}
-            handleKeyPress={handleKeyPress}
             useAddNewCard={useAddNewCard}
             deleteAllCustomCards={deleteAllCustomCards}
+            setAddNewCard={setAddNewCard}
+            customDeck={customDeck}
+            setNewCardName={setNewCardName}
           />
         )}
         <CardList

@@ -3,10 +3,21 @@ import React from "react";
 const CustomDeckMenu = ({
   newCardName,
   useNewCardName,
-  handleKeyPress,
+  deleteAllCustomCards,
   useAddNewCard,
-  deleteAllCustomCards
+  customDeck,
+  setAddNewCard,
+  setNewCardName
 }) => {
+  // Press enter  const handleKeyPress = event => {
+  const handleKeyPress = event => {
+    if (event.key === "Enter") {
+      setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
+
+      setNewCardName("");
+    }
+  };
+
   return (
     <React.Fragment>
       <div className="w-100 center tc">
