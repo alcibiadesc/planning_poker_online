@@ -8,7 +8,6 @@ import {
   readStoredCards
 } from "../components/CustomLocalStorage.js";
 
-// MAIN FUNCTION
 function Table() {
   // Local Storage
   useEffect(() => {
