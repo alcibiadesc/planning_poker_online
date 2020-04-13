@@ -6,6 +6,7 @@ import Table from "../components/Table.js";
 const App = () => {
   return (
     <React.Fragment>
+      <h1>Experimental</h1>
       <TitleBar />
       <Table />
       <Attribution />
