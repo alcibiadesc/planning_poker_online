@@ -16,28 +16,12 @@ function Table() {
 
   const storedCard = readStoredCards();
 
-  // FILTER DECKS
-  let [deck, setDeck] = useState("StoryPoints");
-
   // HOOKS
-  let [newCardName, setNewCardName] = useState(""); // Get input card value from the input
+  const [deck, setDeck] = useState("StoryPoints"); // Filter Decks
+  const [newCardName, setNewCardName] = useState(""); // Get input card value from the input
   const [customDeck, setAddNewCard] = useState(storedCard); // Add new cards to array copy of CustomDeck
   const [deleteCustomCards, setDeleteCustomCards] = useState(); // Delete all custom cards
-
-  // DELETE 1 Card inside Modal
-
-  const [deleteCard, setDeleteCard] = useState();
-
-  const useDeleteCard = () => {
-    setDeleteCard(
-      customDeck.length >= 1 &&
-        customDeck.splice(
-          customDeck.map(card => card.value).indexOf(customDeck.value),
-          1
-        )
-    );
-    console.log("you deleted:" + deleteCard);
-  };
+  const [deleteCard, setDeleteCard] = useState(); // Delete 1 Card inside Modal
 
   return (
     <React.Fragment>
@@ -58,7 +42,8 @@ function Table() {
           deckSelected={deck}
           customDeck={customDeck}
           storeCard={storeCard}
-          useDeleteCard={useDeleteCard}
+          setDeleteCard={setDeleteCard}
+          deleteCard={deleteCard}
         />
 
         <FooterMenu setDeck={setDeck} deck={deck} />

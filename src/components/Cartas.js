@@ -3,11 +3,29 @@ import "./Cartas.css";
 import Modal from "./Modal.js";
 import { motion } from "framer-motion";
 
-function Cartas({ value, deckSelected, useDeleteCard }) {
+function Cartas({
+  value,
+  deckSelected,
+  setDeleteCard,
+  customDeck,
+  deleteCard
+}) {
   const [modal, setModal] = useState(false);
 
   const useModal = () => {
     setModal(!modal);
+  };
+
+  // Delete 1 Card inside Modal
+  const useDeleteCard = () => {
+    setDeleteCard(
+      customDeck.length >= 1 &&
+        customDeck.splice(
+          customDeck.map(card => card.value).indexOf(customDeck.value),
+          1
+        )
+    );
+    console.log("you deleted:" + deleteCard);
   };
 
   return (
