@@ -6,5 +6,5 @@ export const storeCard = cardMap => {
 
 export const readStoredCards = () => {
   const cardMap = JSON.parse(localStorage.getItem(CARD_CUSTOM_STORAGE_KEY));
-  return cardMap ? cardMap : [{ value: "inicial" }];
+  return cardMap ? cardMap : [{ value: "inicial p" }];
 };
