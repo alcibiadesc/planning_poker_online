@@ -1,10 +1,10 @@
 import React from "react";
 import "./Modal.css";
-const Delete = require("./icons/baseline_delete_white_18dp.png");
+import Delete from "./icons/baseline_delete_white_18dp.png";
 
 type props = {
-  value: [String, Number];
-  deckSelected: String;
+  value: string | number;
+  deckSelected: string;
   useDeleteCard: any;
 };
 

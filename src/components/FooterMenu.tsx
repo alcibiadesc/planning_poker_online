@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 
 type props = {
   setDeck: any;
-  deck: String;
+  deck: string;
 };
 
 const FooterMenu = ({ setDeck, deck }: props) => {

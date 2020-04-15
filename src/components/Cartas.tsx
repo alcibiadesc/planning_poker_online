@@ -4,8 +4,8 @@ import Modal from "./Modal";
 import { motion } from "framer-motion";
 
 type props = {
-  value: any;
-  deckSelected: any;
+  value: number | string;
+  deckSelected: string;
   setDeleteCard: any;
   customDeck: any;
   deleteCard: any;

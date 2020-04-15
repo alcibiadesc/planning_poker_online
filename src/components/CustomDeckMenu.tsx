@@ -1,10 +1,10 @@
 import React from "react";
 
 type props = {
-  newCardName: any;
+  newCardName: string | number;
   setDeleteCustomCards: any;
   deleteCustomCards: any;
-  customDeck: any;
+  customDeck: Array<string | number>;
   setAddNewCard: any;
   setNewCardName: any;
 };

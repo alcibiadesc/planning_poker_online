@@ -1,4 +1,9 @@
-export const decks = ["StoryPoints", "T-Shirt", "Fibonacci", "Custom"];
+export const decks: Array<string> = [
+  "StoryPoints",
+  "T-Shirt",
+  "Fibonacci",
+  "Custom",
+];
 
 export const baraja = [
   {

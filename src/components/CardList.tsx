@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { baraja } from "./Baraja";
 
 type props = {
-  deckSelected: any;
+  deckSelected: string;
   customDeck: any;
   setDeleteCard: any;
   deleteCard: any;
