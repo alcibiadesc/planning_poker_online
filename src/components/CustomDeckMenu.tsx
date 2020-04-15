@@ -5,18 +5,18 @@ type props = {
   setDeleteCustomCards: any;
   deleteCustomCards: any;
   customDeck: Array<string | number>;
-  setAddNewCard: any;
-  setNewCardName: any;
+  setAddNewCard: (arg0: object) => void;
+  setNewCardName: (arg0: string) => void;
 };
 
-const CustomDeckMenu = ({
+const CustomDeckMenu: React.FC<props> = ({
   newCardName,
   setDeleteCustomCards,
   deleteCustomCards,
   customDeck,
   setAddNewCard,
   setNewCardName,
-}: props) => {
+}) => {
   // Press enter  const handleKeyPress = event => {
   const handleKeyPress = (event: any) => {
     if (event.key === "Enter") {

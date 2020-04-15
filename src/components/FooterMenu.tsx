@@ -8,7 +8,7 @@ type props = {
   deck: string;
 };
 
-const FooterMenu = ({ setDeck, deck }: props) => {
+const FooterMenu: React.FC<props> = ({ setDeck, deck }) => {
   const decksOptions = decks.map((item, index) => {
     return (
       <div

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import "./Cartas.css";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
@@ -8,16 +8,16 @@ type props = {
   deckSelected: string;
   setDeleteCard: any;
   customDeck: any;
-  deleteCard: any;
+  deleteCard: (arg0: string | number) => void;
 };
 
-function Cartas({
+const Cartas: React.FC<props> = ({
   value,
   deckSelected,
   setDeleteCard,
   customDeck,
   deleteCard,
-}: props) {
+}) => {
   const [modal, setModal] = useState(false);
 
   const useModal = () => {
@@ -37,7 +37,7 @@ function Cartas({
   };
 
   return (
-    <>
+    <Fragment>
       <motion.div
         animate={{
           scale: [1.1, 0.9, 1],
@@ -68,8 +68,8 @@ function Cartas({
           />
         </div>
       )}
-    </>
+    </Fragment>
   );
-}
+};
 
 export default Cartas;

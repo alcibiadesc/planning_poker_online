@@ -1,16 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./Modal.css";
 import Delete from "./icons/baseline_delete_white_18dp.png";
 
 type props = {
   value: string | number;
   deckSelected: string;
-  useDeleteCard: any;
+  useDeleteCard: () => void;
 };
 
-const Modal = ({ value, deckSelected, useDeleteCard }: props) => {
+const Modal: React.FC<props> = ({ value, deckSelected, useDeleteCard }) => {
   return (
-    <React.Fragment>
+    <Fragment>
       <div className="md-modal-show">
         <div className="card-modal pa2">
           {deckSelected === "Custom" ? (
@@ -21,7 +21,7 @@ const Modal = ({ value, deckSelected, useDeleteCard }: props) => {
           <p className="contend-modal noselect tc avenir f1">{value}</p>
         </div>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 
