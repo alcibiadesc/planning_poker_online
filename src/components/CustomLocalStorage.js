@@ -1,6 +1,6 @@
 const CARD_CUSTOM_STORAGE_KEY = "CARD_CUSTOM_STORAGE_KEY";
 
-export const storeCard = cardMap => {
+export const storeCard = (cardMap) => {
   localStorage.setItem(CARD_CUSTOM_STORAGE_KEY, JSON.stringify(cardMap));
 };
 

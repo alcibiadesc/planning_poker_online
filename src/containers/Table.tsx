@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Table.css";
 import CardList from "../components/CardList";
-import FooterMenu from "../components/FooterMenu.js";
-import CustomDeckMenu from "../components/CustomDeckMenu.js";
+import FooterMenu from "../components/FooterMenu";
+import CustomDeckMenu from "../components/CustomDeckMenu";
 import {
   storeCard,
-  readStoredCards
+  readStoredCards,
 } from "../components/CustomLocalStorage.js";
 
 function Table() {

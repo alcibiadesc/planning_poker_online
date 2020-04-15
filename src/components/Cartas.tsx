@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import "./Cartas.css";
-import Modal from "./Modal.js";
+import Modal from "./Modal";
 import { motion } from "framer-motion";
+
+type props = {
+  value: any;
+  deckSelected: any;
+  setDeleteCard: any;
+  customDeck: any;
+  deleteCard: any;
+};
 
 function Cartas({
   value,
   deckSelected,
   setDeleteCard,
   customDeck,
-  deleteCard
-}) {
+  deleteCard,
+}: props) {
   const [modal, setModal] = useState(false);
 
   const useModal = () => {
@@ -21,7 +29,7 @@ function Cartas({
     setDeleteCard(
       customDeck.length >= 1 &&
         customDeck.splice(
-          customDeck.map(card => card.value).indexOf(customDeck.value),
+          customDeck.map((card: any) => card.value).indexOf(customDeck.value),
           1
         )
     );
@@ -32,7 +40,7 @@ function Cartas({
     <>
       <motion.div
         animate={{
-          scale: [1.1, 0.9, 1]
+          scale: [1.1, 0.9, 1],
         }}
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5 }}
@@ -42,7 +50,7 @@ function Cartas({
         <p
           id="cardRender"
           onClick={useModal}
-          value={value}
+          defaultValue={value}
           className="noselect avenir dtc v-mid  tc w4 f1"
         >
           {value}

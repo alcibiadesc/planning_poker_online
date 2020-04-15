@@ -1,15 +1,24 @@
 import React from "react";
 
+type props = {
+  newCardName: any;
+  setDeleteCustomCards: any;
+  deleteCustomCards: any;
+  customDeck: any;
+  setAddNewCard: any;
+  setNewCardName: any;
+};
+
 const CustomDeckMenu = ({
   newCardName,
   setDeleteCustomCards,
   deleteCustomCards,
   customDeck,
   setAddNewCard,
-  setNewCardName
-}) => {
+  setNewCardName,
+}: props) => {
   // Press enter  const handleKeyPress = event => {
-  const handleKeyPress = event => {
+  const handleKeyPress = (event: any) => {
     if (event.key === "Enter") {
       setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
 
@@ -26,7 +35,7 @@ const CustomDeckMenu = ({
 
   // Get input card value from the input
 
-  const useNewCardName = event => {
+  const useNewCardName = (event: any) => {
     setNewCardName(event.target.value);
   };
 
@@ -48,7 +57,7 @@ const CustomDeckMenu = ({
             value={newCardName}
             onChange={useNewCardName}
             onKeyPress={handleKeyPress}
-            maxLength="15"
+            maxLength={15}
             placeholder="Card Value"
           />
         </div>
@@ -56,8 +65,7 @@ const CustomDeckMenu = ({
         {/* BUTTON CREATE NEW CARD */}
 
         <button
-          href="#0"
-          type="Reset"
+          typeof="Reset"
           onClick={useAddNewCard}
           className="f6 link dim ba ph3 pv2 mb2 dib dark-gray pa2 noselect "
         >

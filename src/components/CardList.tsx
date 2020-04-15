@@ -3,7 +3,19 @@ import Cartas from "./Cartas";
 import { v4 as uuidv4 } from "uuid";
 import { baraja } from "./Baraja";
 
-const CardList = ({ deckSelected, customDeck, setDeleteCard, deleteCard }) => {
+type props = {
+  deckSelected: any;
+  customDeck: any;
+  setDeleteCard: any;
+  deleteCard: any;
+};
+
+const CardList = ({
+  deckSelected,
+  customDeck,
+  setDeleteCard,
+  deleteCard,
+}: props) => {
   // filter the decks with the deck value and common cards like "?"
 
   let barajaSeleccionada = baraja;
@@ -12,11 +24,11 @@ const CardList = ({ deckSelected, customDeck, setDeleteCard, deleteCard }) => {
     : (barajaSeleccionada = baraja);
 
   const cardFiltered = barajaSeleccionada.filter(
-    item => item.deck === deckSelected
+    (item: any) => item.deck === deckSelected
   );
 
   // render the cardValue filtered with map and inser a Key = card value.
-  const cardValue = cardFiltered.map((item, index) => {
+  const cardValue = cardFiltered.map((item: any, index: number) => {
     return (
       <Cartas
         key={uuidv4()}

@@ -1,9 +1,14 @@
 import React from "react";
 import "./FooterMenu.css";
-import { decks } from "../components/Baraja.js";
+import { decks } from "./Baraja";
 import { v4 as uuidv4 } from "uuid";
 
-const FooterMenu = ({ setDeck, deck }) => {
+type props = {
+  setDeck: any;
+  deck: String;
+};
+
+const FooterMenu = ({ setDeck, deck }: props) => {
   const decksOptions = decks.map((item, index) => {
     return (
       <div

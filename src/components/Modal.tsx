@@ -1,8 +1,14 @@
 import React from "react";
 import "./Modal.css";
-import Delete from "./icons/baseline_delete_white_18dp.png";
+const Delete = require("./icons/baseline_delete_white_18dp.png");
 
-const Modal = ({ value, deckSelected, useDeleteCard }) => {
+type props = {
+  value: [String, Number];
+  deckSelected: String;
+  useDeleteCard: any;
+};
+
+const Modal = ({ value, deckSelected, useDeleteCard }: props) => {
   return (
     <React.Fragment>
       <div className="md-modal-show">

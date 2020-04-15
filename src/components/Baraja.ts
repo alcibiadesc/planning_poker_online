@@ -4,158 +4,158 @@ export const baraja = [
   {
     // T-SHIRT
     value: "XS",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
   {
     value: "S",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
   {
     value: "M",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
   {
     value: "L",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
   {
     value: "XL",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
   {
     value: "XXL",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
 
   {
     value: "?",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
   {
     value: "∞",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
   {
     value: "☕",
-    deck: "T-Shirt"
+    deck: "T-Shirt",
   },
 
   {
     // STORYPOINTS
     value: "0",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "1/2",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "1",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "2",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "3",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "5",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "8",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "13",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "20",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "40",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "100",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "?",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "∞",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     value: "☕",
-    deck: "StoryPoints"
+    deck: "StoryPoints",
   },
   {
     // FIBONACCI
     value: "0",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "1",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "2",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "3",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "5",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "8",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "13",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "21",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "34",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "55",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "89",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "144",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "?",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "∞",
-    deck: "Fibonacci"
+    deck: "Fibonacci",
   },
   {
     value: "☕",
-    deck: "Fibonacci"
-  }
+    deck: "Fibonacci",
+  },
 ];
