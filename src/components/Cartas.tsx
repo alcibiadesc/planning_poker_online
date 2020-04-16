@@ -6,17 +6,17 @@ import { motion } from "framer-motion";
 type props = {
   value: number | string;
   deckSelected: string;
-  setDeleteCard: any;
   customDeck: any;
-  deleteCard: (arg0: string | number) => void;
+  setAddNewCard: any;
+  cardID: any;
 };
 
 const Cartas: React.FC<props> = ({
   value,
   deckSelected,
-  setDeleteCard,
+  setAddNewCard,
   customDeck,
-  deleteCard,
+  cardID,
 }) => {
   const [modal, setModal] = useState(false);
 
@@ -24,16 +24,10 @@ const Cartas: React.FC<props> = ({
     setModal(!modal);
   };
 
-  // Delete 1 Card inside Modal
+  // Delete 1 card
+
   const useDeleteCard = () => {
-    setDeleteCard(
-      customDeck.length >= 1 &&
-        customDeck.splice(
-          customDeck.map((card: any) => card.value).indexOf(customDeck.value),
-          1
-        )
-    );
-    console.log("you deleted:" + deleteCard);
+    setAddNewCard(customDeck.filter((card: any) => card.id !== cardID.id));
   };
 
   return (

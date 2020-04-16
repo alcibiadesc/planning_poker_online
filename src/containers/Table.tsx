@@ -21,7 +21,6 @@ function Table() {
   const [newCardName, setNewCardName] = useState(""); // Get input card value from the input
   const [customDeck, setAddNewCard] = useState(storedCard); // Add new cards to array copy of CustomDeck
   const [deleteCustomCards, setDeleteCustomCards] = useState(); // Delete all custom cards
-  const [deleteCard, setDeleteCard] = useState(); // Delete 1 Card inside Modal
 
   return (
     <React.Fragment>
@@ -41,8 +40,7 @@ function Table() {
         <CardList
           deckSelected={deck}
           customDeck={customDeck}
-          setDeleteCard={setDeleteCard}
-          deleteCard={deleteCard}
+          setAddNewCard={setAddNewCard}
         />
 
         <FooterMenu setDeck={setDeck} deck={deck} />

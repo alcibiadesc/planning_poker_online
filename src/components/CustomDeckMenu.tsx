@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 type props = {
   newCardName: string | number;
@@ -20,7 +21,10 @@ const CustomDeckMenu: React.FC<props> = ({
   // Press enter  const handleKeyPress = event => {
   const handleKeyPress = (event: any) => {
     if (event.key === "Enter") {
-      setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
+      setAddNewCard([
+        ...customDeck,
+        { id: uuidv4(), value: newCardName, deck: "Custom" },
+      ]);
 
       setNewCardName("");
     }
@@ -28,7 +32,10 @@ const CustomDeckMenu: React.FC<props> = ({
 
   // Add new cards to array copy of CustomDeck
   let useAddNewCard = () => {
-    setAddNewCard([...customDeck, { value: newCardName, deck: "Custom" }]);
+    setAddNewCard([
+      ...customDeck,
+      { id: uuidv4(), value: newCardName, deck: "Custom" },
+    ]);
     console.log(customDeck);
     setNewCardName("");
   };

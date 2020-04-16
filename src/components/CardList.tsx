@@ -6,15 +6,15 @@ import { baraja } from "./Baraja";
 type props = {
   deckSelected: string;
   customDeck: any;
-  setDeleteCard: any;
-  deleteCard: any;
+
+  setAddNewCard: any;
 };
 
 const CardList = ({
   deckSelected,
   customDeck,
-  setDeleteCard,
-  deleteCard,
+
+  setAddNewCard,
 }: props) => {
   // filter the decks with the deck value and common cards like "?"
 
@@ -35,8 +35,8 @@ const CardList = ({
         value={cardFiltered[index].value}
         customDeck={customDeck}
         deckSelected={deckSelected}
-        setDeleteCard={setDeleteCard}
-        deleteCard={deleteCard}
+        setAddNewCard={setAddNewCard}
+        cardID={cardFiltered[index]}
       />
     );
   });
