@@ -8,7 +8,7 @@ type props = {
   deckSelected: string;
   customDeck: any;
   setAddNewCard: any;
-  cardID: any;
+  id: string;
 };
 
 const Cartas: React.FC<props> = ({
@@ -16,7 +16,7 @@ const Cartas: React.FC<props> = ({
   deckSelected,
   setAddNewCard,
   customDeck,
-  cardID,
+  id,
 }) => {
   const [modal, setModal] = useState(false);
 
@@ -27,7 +27,7 @@ const Cartas: React.FC<props> = ({
   // Delete 1 card
 
   const useDeleteCard = () => {
-    setAddNewCard(customDeck.filter((card: any) => card.id !== cardID.id));
+    setAddNewCard(customDeck.filter((card: any) => card.id !== id));
   };
 
   return (
@@ -38,7 +38,7 @@ const Cartas: React.FC<props> = ({
         }}
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5 }}
-        whileTap={{ scale: 0.9 }}
+        whileTap={{ scale: 0.8 }}
         className="carta grow center ma1"
       >
         <p

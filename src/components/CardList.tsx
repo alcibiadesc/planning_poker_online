@@ -1,6 +1,5 @@
 import React from "react";
 import Cartas from "./Cartas";
-import { v4 as uuidv4 } from "uuid";
 import { baraja } from "./Baraja";
 
 type props = {
@@ -31,12 +30,12 @@ const CardList = ({
   const cardValue = cardFiltered.map((item: any, index: number) => {
     return (
       <Cartas
-        key={uuidv4()}
+        key={cardFiltered[index].id}
         value={cardFiltered[index].value}
         customDeck={customDeck}
         deckSelected={deckSelected}
         setAddNewCard={setAddNewCard}
-        cardID={cardFiltered[index]}
+        id={cardFiltered[index].id}
       />
     );
   });
