@@ -37,7 +37,7 @@ const Cartas: React.FC<props> = ({
           scale: [1.1, 0.9, 1],
         }}
         whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.2 }}
         whileTap={{ scale: 0.8 }}
         className="carta grow center ma1"
       >
