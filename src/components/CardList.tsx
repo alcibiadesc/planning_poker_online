@@ -5,7 +5,6 @@ import { baraja } from "./Baraja";
 type props = {
   deckSelected: string;
   customDeck: any;
-
   setAddNewCard: any;
 };
 

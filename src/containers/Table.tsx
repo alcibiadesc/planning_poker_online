@@ -8,7 +8,7 @@ import {
   readStoredCards,
 } from "../components/CustomLocalStorage.js";
 
-function Table() {
+const Table: React.FC = () => {
   // Local Storage
   useEffect(() => {
     storeCard(customDeck);
@@ -47,6 +47,6 @@ function Table() {
       </div>
     </React.Fragment>
   );
-}
+};
 
 export default Table;
