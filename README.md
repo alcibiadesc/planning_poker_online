@@ -1,6 +1,7 @@
 # ¿Qué es?
 
-![ Alt text](Planning Poker. gif) / ! [](Planning Poker. gif)
+![](https://github.com/Alci6/planning_poker_online/blob/3fa438b01faa0b2ea41cbe47a3a3c43afbfe69e0/Planning%20Poker.gif)
+
 Una web app con las cartas para estimación durante la planning. 
 
 ## ¿Cómo puedo acceder?
