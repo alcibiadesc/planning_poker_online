@@ -1,4 +1,6 @@
 # ¿Qué es?
+
+![ Alt text](Planning Poker. gif) / ! [](Planning Poker. gif)
 Una web app con las cartas para estimación durante la planning. 
 
 ## ¿Cómo puedo acceder?
